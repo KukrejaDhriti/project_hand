@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hand Recognition</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    </head>
+
+    <body>
+        <center>
+        <div class="col-md-4 col-sm-12 col-xs-12"></div>
+        <label>Webcam -</label>
+    <div class="camera"> </div>
+   <br><br>
+   <button onclick="take_snapshot();" class="btn btn-warning">Click Picture</button>
+    </div>
+
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Answer</label>
+        <p class="hand_name" id="result_hand_name"></p>
+        <p class="hand" id="update_hand"></p>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Snapshot - </label>
+          <div id="result"></div>
+    <br><br>
+    <button onclick="check();" class="btn btn-success">Check</button>
+        </center>
+        <script src="main.js"></script>  ''
+    </body>
+</html>
